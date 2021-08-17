@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <h1>CONTROL DE FLUJO USANDO FLEXBOX</h1>
+    
+    <!-- Bloque1 -->
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">15</div>
+        <div class="item">16</div>
+        <div class="item">17</div>
+        <div class="item">18</div>
+        <div class="item">19</div>
+        <div class="item">20</div>
+    </div>
+
+    <p>para expadir los elementos y que usen todo el ancho de la pantalla debo usar en cada flexitem
+        la propiedad flex: auto;
+    </p>
+    <img class="flecha uno" src="https://image.flaticon.com/icons/png/512/626/626013.png" alt=""> 
+    
+        <!-- Bloque2 -->
+        <div class="container">
+            <div class="item2">1</div>
+            <div class="item2">2</div>
+            <div class="item2">3</div>
+            <div class="item2">4</div>
+            <div class="item2">5</div>
+            <div class="item2">6</div>
+            <div class="item2">7</div>
+            <div class="item2">8</div>
+            <div class="item2">9</div>
+            <div class="item2">10</div>
+            <div class="item2">11</div>
+            <div class="item2">12</div>
+            <div class="item2">13</div>
+            <div class="item2">14</div>
+            <div class="item2">15</div>
+            <div class="item2">16</div>
+            <div class="item2">17</div>
+            <div class="item2">18</div>
+            <div class="item2">19</div>
+            <div class="item2">20</div>
+        </div>
+
+        <p>Puedo agregarles margenes también, hay que tener <b>MUY PRESENTE</b> que los elementos
+        se van a deformar cuando el Display: Flex es de una sola linea, esto quiere decir, 
+        cuando no se ha establecido una propiedad WRAP. Mientras esto no pase se van a deformar los objetos
+        para caber en la linea pero si se activa la propiedad WRAP estos no se deformarán si no que pasaran 
+        a la liena siguiente cuando no haya espacio  </p>
+        <img class="flecha uno" src="https://image.flaticon.com/icons/png/512/626/626013.png" alt=""> 
+
+            <!-- Bloque3 -->
+            <div class="container">
+                <div class="item3">1</div>
+                <div class="item3">2</div>
+                <div class="item3">3</div>
+                <div class="item3">4</div>
+                <div class="item3">5</div>
+                <div class="item3">6</div>
+                <div class="item3">7</div>
+                <div class="item3">8</div>
+                <div class="item3">9</div>
+                <div class="item3">10</div>
+                <div class="item3">11</div>
+                <div class="item3">12</div>
+                <div class="item3">13</div>
+                <div class="item3">14</div>
+                <div class="item3">15</div>
+                <div class="item3">16</div>
+                <div class="item3">17</div>
+                <div class="item3">18</div>
+                <div class="item3">19</div>
+                <div class="item3">20</div>
+            </div>
+
+
+        <p>Uso de Align-Content es el equivalente a Align-Items pero se usa para cuando debo alinear 
+            más de un elemento en el eje secundario. Esta es una propiedad también relacionada con
+            Display:flex. En este caso estoy usando la propiedad Align-Content para centrar todos los
+            elementos en la mitad. las lienas que no tienen todos los elementos tienen la propiedad 
+            space-between por ende se van a los opuestos
+        </p>
+        <img class="flecha uno" src="https://image.flaticon.com/icons/png/512/626/626013.png" alt=""> 
+            <!-- Bloque4 -->
+        <div class="container-2">
+            <div class="flexitem">1</div>
+            <div class="flexitem">2</div>
+            <div class="flexitem">3</div>
+            <div class="flexitem">4</div>
+            <div class="flexitem">5</div>
+            <div class="flexitem">6</div>
+            <div class="flexitem">7</div>
+            <div class="flexitem">8</div>
+            <div class="flexitem">9</div>
+            <div class="flexitem">10</div>
+            <div class="flexitem">11</div>
+            <div class="flexitem">12</div>
+            <div class="flexitem">13</div>
+            <div class="flexitem">14</div>
+        </div>
+
+        <p>En la siguiente parte se verá el uso de la propiedad order, esta sirve para cambiar el 
+            orden de reenderizado de los objetos, por defecto, todos los objetos tienen esta propiedad
+            en cero y se reenderizan según su orden en el html. Este valor puede ser negativo para mostrar
+            el objeto con el valor antes que los objetos con valor 0. En el siguiente caso, el Bloque
+            5 tiene el valor order:-1 por eso se muestra primero, y el bloque 1 tiene la propiedad
+            order:1 por eso se muestra de último. Los demás elementos tienen un valor order:0 
+            por ende se muestran según su ubicación en el html
+        </p>
+        <img class="flecha uno" src="https://image.flaticon.com/icons/png/512/626/626013.png" alt=""> 
+        <!-- Bloque5 -->
+        <div class="container-2 order">
+            <div class="flexitem item1">1</div>
+            <div class="flexitem item2">2</div>
+            <div class="flexitem item3">3</div>
+            <div class="flexitem item4">4</div>
+            <div class="flexitem item5">5</div>
+            <div class="flexitem item6">6</div>
+            <div class="flexitem item7">7</div>
+            <div class="flexitem item8">8</div>
+            <div class="flexitem item9">9</div>
+            <div class="flexitem item10">10</div>
+            <div class="flexitem item11">11</div>
+            <div class="flexitem item12">12</div>
+            <div class="flexitem item13">13</div>
+            <div class="flexitem item14">14</div>
+            <div class="flexitem item15">15</div>   
+        </div>
+
+</body>
+</html>

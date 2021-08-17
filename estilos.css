@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    background: #bbb;
+    text-align: center;
+    line-height: 100px;
+}
+
+.item:nth-child(even),.item2:nth-child(even),
+.item3:nth-child(even){
+    background: lightblue;
+}
+
+.flecha{
+    width: 100px;
+    margin: 20px 0 20px 285px;
+}
+
+.item2{
+    flex: auto;
+    width: 100px;
+    height: 100px;
+    background: #bbb;
+    text-align: center;
+    line-height: 100px;
+}
+.item3{
+    margin: 10px;
+    flex: auto;
+    width: 100px;
+    height: 100px;
+    background: #bbb;
+    text-align: center;
+    line-height: 100px;
+}
+
+.container-2{   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    height: 500px;
+    background: lightcoral;
+    margin-bottom: 80px;
+    align-content: center;
+}
+
+.container-2 .flexitem{
+    flex: 0 1 15%;
+    margin-bottom: 2%;
+    text-align: center;
+    line-height: 100px;
+    width: 80px;
+    height: 80px;
+
+}
+
+.container-2 .flexitem:nth-child(odd){
+    background: lightgreen;
+}
+.container-2 .flexitem:nth-child(even){
+    background: lightseagreen;
+}
+
+.order{
+    background: coral;
+}
+
+.item5{
+    order: -1;
+}
+
+.item1{
+    order: 1;
+}
